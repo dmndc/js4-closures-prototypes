@@ -261,9 +261,12 @@ function outer() {
    */
   
   function timeOutCounter() {
-    for (var i = 0; i <= 5; i++) {
+    var count = 0
+
+    for (var i = 0; i <= 5; i++) {    
       setTimeout(function() {
-          console.log(i)
+          console.log(count);
+          count += 1;
       }, i * 1000)
     }
   }
